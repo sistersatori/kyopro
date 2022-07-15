@@ -2,16 +2,13 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 )
 
-func main() {
-	in := bufio.NewReader(os.Stdin)
-	out := bufio.NewWriter(os.Stdout)
-	defer out.Flush()
+// func solve(r *bufio.Reader, w *bufio.Writer) {}
 
-	var h, w string
-	fmt.Fscan(in, &h, &w)
-	fmt.Fprintln(out, h, w)
+func main() {
+	r := bufio.NewReader(os.Stdin)
+	w := bufio.NewWriter(os.Stdout)
+	defer w.Flush()
 }
